@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	
+	<body>
+		<div class="row" th:fragment="banner">
+        	<div class="carousel slide" data-ride="carousel" id="banner">
+            	<ol class="carousel-indicators">
+                	<li data-target="#banner" data-slide-to="0" 
+                        class="active"></li>
+                    <li data-target="#banner" data-slide-to="1"></li>
+                    <li data-target="#banner" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                	<div class="item active">
+                    	<img src="/image/Arte1.png"
+                        style="width: 100%;">
+                   	</div>
+                    <div class="item">
+                         <img src="/image/arte2.png" alt="Banner 2" 
+                         style="width: 100%;">
+                    </div>
+                    <div class="item">
+                         <img src="/image/arte3.png" alt="Banner 3" 
+                         style="width: 100%;">
+                    </div>
+                 </div>
+                 <a href="#banner" class="left carousel-control" 
+                 data-slide="prev">
+                 	<span class="glyphicon glyphicon-chevron-left"></span>
+                 	<span class="sr-only">Voltar</span>
+                 </a>
+                 <a href="#banner" class="right carousel-control"
+                 data-slide="next">
+                 	<span class="glyphicon glyphicon-chevron-right"></span>
+                 	<span class="sr-only">Avançar</span>
+                 </a>
+             </div>
+         </div>
+	</body>
+</html>

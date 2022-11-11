@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-inverse" th:fragment="menu">
+           <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class=navbar-brand href="/"><img class=imagemlegal src="/image/logocyberguns.png"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/">Home</a></li>
+                        <li><a href="/sobre/sobre">Sobre</a></li>
+                        <li><a href="/servicos/servicos">Serviço</a></li>
+                        <li><a href="/produtos/produtos">Produtos</a></li>
+                        <li><a href="/contato/contato">Contato</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-log-in" data-toggle="modal" data-target="#exampleModal"> Entrar</span>
+                                
+                                
+                                
+                                
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      
+      
+      
+     <ul class="nav nav-tabs">
+     <a href=""></a>
+  <li class="active"><a data-toggle="tab" href="#home">Login</a></li>
+  <li><a data-toggle="tab" href="#menu1">Cadastro</a></li>
+  <li><a data-toggle="tab" href="#menu2">Recuperar senha</a></li>
+</ul>
+
+
+
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+    <p><div class="box-parent-login">
+	<div class="well bg-white box-login">
+		<h1 class="ls-login-logo">CYBER GUNS LOGIN</h1>
+		<form role="form">
+			<fieldset>
+				<div class="form-group ls-login-user">
+					<label for="userLogin">Usuário</label>
+					<input class="form-control ls-login-bg-user input-lg" id="userLogin" type="text" aria-label="Usuário" placeholder="Usuário">
+				</div>
+ 
+				<div class="form-group ls-login-password">
+					<label for="userPassword">Senha</label>
+					<input class="form-control ls-login-bg-password input-lg" id="userPassword" type="password" aria-label="Senha" placeholder="Senha">
+				</div>
+
+				<a data-toggle="tab" href="#menu2" class="ls-login-forgot">Esqueci minha senha</a>
+				
+				
+				<a href="/dashboard/dashboard"  class="btn btn-primary btn-lg btn-block">
+				Entrar
+				</a>
+				
+					<a data-toggle="tab" href="#menu1"> Não possui um usuário? Cadastre-se agora</a>
+				</p>
+ 
+			</fieldset>
+		</form>
+	</div>
+</div></p>
+  </div>
+  
+  
+  
+  
+  <div id="menu1" class="tab-pane fade">
+    <p><p><div class="box-parent-login">
+	<div class="well bg-white box-login">
+		<h1 class="ls-login-logo">CYBER GUNS CADASTRO</h1>
+		<form role="form">
+			<fieldset>
+			
+			
+				<div class="form-group ls-login-user">
+					<label for="userLogin">Nome de Usuário</label>
+					<input class="form-control ls-login-bg-user input-lg" id="userLogin" type="text" aria-label="Usuário" placeholder="Usuário">
+				</div>
+				
+				<div class="form-group ls-login-user">
+					<label for="userLogin">Email</label>
+					<input class="form-control ls-login-bg-email input-lg" id="userLogin" type="text" aria-label="Usuário" placeholder="Usuário">
+				</div>
+ 
+				<div class="form-group ls-login-password">
+					<label for="userPassword">Senha</label>
+					<input class="form-control ls-login-bg-password input-lg" id="userPassword" type="password" aria-label="Senha" placeholder="Senha">
+				</div>
+				
+				<div class="form-group ls-login-password">
+					<label for="userPasswordconfirmation">Confirmar senha</label>
+					<input class="form-control ls-login-bg-password input-lg" id="userPassword" type="password" aria-label="Senha" placeholder="Senha">
+				</div>
+ 
+				<a href="/dashboard/dashboard"  class="btn btn-primary btn-lg btn-block">
+				Cadastrar
+				</a>
+				
+				<a data-toggle="tab" href="#home">Já possui um usuário? Fazer login</a>
+				</p>
+ 
+			</fieldset>
+		</form>
+	</div>
+</div></p>
+  </div></p>
+  
+   <div id="menu2" class="tab-pane fade">
+     <p><div class="box-parent-login">
+	<div class="well bg-white box-login">
+		<h1 class="ls-login-logo">RECUPERAR SENHA</h1>
+		<form role="form">
+			<fieldset>
+				<div class="form-group ls-login-user">
+					<label for="userLogin">Email cadastrado</label>
+					<input class="form-control ls-login-bg-user input-lg" id="userLogin" type="text" aria-label="Usuário" placeholder="Usuário">
+				</div>
+ 
+				<div class="form-group ls-login-password">
+					<label for="userPassword">Confirmar email</label>
+					<input class="form-control ls-login-bg-user input-lg" id="userLogin" type="text" aria-label="Senha" placeholder="Senha">
+				</div>
+ 
+				<a href="/dashboard/dashboard"  class="btn btn-primary btn-lg btn-block">
+				Enviar
+				</a>
+					<a data-toggle="tab" href="#menu1"> Não possui um usuário? Cadastre-se agora</a><br>
+					<a data-toggle="tab" href="#home">Possui outro usuário? Fazer login</a>
+				</p>
+ 
+			</fieldset>
+		</form>
+	</div>
+</div></p>
+  </div>
+</div>
+
+  </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+	</body>
+</html>
